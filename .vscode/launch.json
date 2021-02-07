@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "runClient",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.legacydev.MainClient",
+      "projectName": "Minecraft-1.12.2-Forge-MDK",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dSCAN,REGISTRIES,REGISTRYDUMP",
+      "args": "",
+      "env": {
+        "MCP_TO_SRG": "C:\\Users\\silen\\Documents\\GitHub\\Minecraft-1.12.2-Forge-MDK\\build\\createSrgToMcp\\output.srg",
+        "MOD_CLASSES": "${workspaceFolder}\\bin\\main;${workspaceFolder}\\bin\\main",
+        "mainClass": "net.minecraft.launchwrapper.Launch",
+        "MCP_MAPPINGS": "snapshot_20171003-1.12",
+        "FORGE_VERSION": "14.23.5.2854",
+        "assetIndex": "1.12",
+        "assetDirectory": "C:\\Users\\silen\\.gradle\\caches\\forge_gradle\\assets",
+        "nativesDirectory": "${workspaceFolder}\\build\\natives",
+        "FORGE_GROUP": "net.minecraftforge",
+        "tweakClass": "net.minecraftforge.fml.common.launcher.FMLTweaker",
+        "MC_VERSION": "${MC_VERSION}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "runServer",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.legacydev.MainServer",
+      "projectName": "Minecraft-1.12.2-Forge-MDK",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dSCAN,REGISTRIES,REGISTRYDUMP",
+      "args": "",
+      "env": {
+        "MCP_TO_SRG": "C:\\Users\\silen\\Documents\\GitHub\\Minecraft-1.12.2-Forge-MDK\\build\\createSrgToMcp\\output.srg",
+        "MOD_CLASSES": "${workspaceFolder}\\bin\\main;${workspaceFolder}\\bin\\main",
+        "mainClass": "net.minecraft.launchwrapper.Launch",
+        "MCP_MAPPINGS": "snapshot_20171003-1.12",
+        "FORGE_VERSION": "14.23.5.2854",
+        "FORGE_GROUP": "net.minecraftforge",
+        "tweakClass": "net.minecraftforge.fml.common.launcher.FMLServerTweaker",
+        "MC_VERSION": "${MC_VERSION}"
+      }
+    }
+  ]
+}
